@@ -1,0 +1,101 @@
+//setup
+@import "setup/vars.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+@import "setup/typography.scss";
+
+//basics
+@import "basics/helpers.scss";
+@import "basics/layouts.scss";
+@import "basics/links.scss";
+@import "basics/base.scss";
+@import "basics/buttons.scss";
+
+//component
+.add-form {
+  background-color: #aaa;
+  margin: 0 auto;
+  padding: 20px;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  .email-input,
+  .msg-input {
+    margin: 0.5rem 1rem;
+    padding: 10px;
+  }
+
+  .submit-section {
+    margin: 0.5rem 1rem;
+
+    display: flex;
+    justify-content: flex-end;
+    button {
+      background-color: #00aaff;
+      padding: 5px 10px;
+    }
+  }
+}
+
+
+.comments {
+  margin: 0 auto;
+  width: 40vw;
+  background-color: #fff;
+
+  .feed-filter {
+    margin: 0.5rem 1rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+    input {
+      border: 0.5px solid #333;
+      padding: 5px;
+      
+    }
+  }
+
+  .feed-list {
+    margin: 0.5rem 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .comment-prev {
+      display: flex;
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      .img-container {
+        img {
+          width: 60%;
+        }
+      }
+      .titles {
+        display: flex;
+        flex-direction: column;
+        .email-title {
+          font-weight: 800;
+        }
+        padding: 5px;
+        // justify-content: center;
+      }
+    }
+  }
+  
+  
+}
+
+
+//views
+
+.feed {
+  width: 60vw;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ccc;
+  height: 100vh;
+}
